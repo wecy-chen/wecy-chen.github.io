@@ -2,7 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://wecy-chen.github.io/2022/06/23/md/</loc>
+    <loc>https://wecy-chen.github.io/2022/05/30/git/</loc>
+    
+    <lastmod>2022-06-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wecy-chen.github.io/about/index.html</loc>
+    
+    <lastmod>2022-06-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wecy-chen.github.io/link/index.html</loc>
+    
+    <lastmod>2022-06-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wecy-chen.github.io/2021/11/17/hexo/</loc>
+    
+    <lastmod>2022-06-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wecy-chen.github.io/2022/03/19/hello-world/</loc>
+    
+    <lastmod>2022-06-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wecy-chen.github.io/2021/12/08/zhifubao/</loc>
+    
+    <lastmod>2022-06-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wecy-chen.github.io/2021/11/01/yinxiangbiji/</loc>
+    
+    <lastmod>2022-06-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wecy-chen.github.io/2022/05/13/ts/</loc>
     
     <lastmod>2022-06-24</lastmod>
     
@@ -11,28 +60,21 @@
   <url>
     <loc>https://wecy-chen.github.io/2022/05/30/vue3/</loc>
     
-    <lastmod>2022-06-21</lastmod>
+    <lastmod>2022-06-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://wecy-chen.github.io/2022/05/13/ts/</loc>
+    <loc>https://wecy-chen.github.io/2022/06/23/md/</loc>
     
-    <lastmod>2022-06-17</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wecy-chen.github.io/2021/12/08/zhifubao/</loc>
-    
-    <lastmod>2022-06-17</lastmod>
+    <lastmod>2022-06-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://wecy-chen.github.io/2022/05/30/git/</loc>
+    <loc>https://wecy-chen.github.io/movies/index.html</loc>
     
-    <lastmod>2022-06-01</lastmod>
+    <lastmod>2022-06-24</lastmod>
     
   </url>
   
@@ -52,27 +94,6 @@
   
   <url>
     <loc>https://wecy-chen.github.io/categories/index.html</loc>
-    
-    <lastmod>2022-03-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wecy-chen.github.io/2021/11/17/hexo/</loc>
-    
-    <lastmod>2022-03-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wecy-chen.github.io/2022/03/19/hello-world/</loc>
-    
-    <lastmod>2022-03-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wecy-chen.github.io/2021/11/01/yinxiangbiji/</loc>
     
     <lastmod>2022-03-19</lastmod>
     
@@ -115,10 +136,80 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://wecy-chen.github.io/tags/md%E5%AD%A6%E4%B9%A0-markdown/</loc>
+    <lastmod>2022-06-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wecy-chen.github.io/tags/vue/</loc>
+    <lastmod>2022-06-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wecy-chen.github.io/tags/typescript/</loc>
+    <lastmod>2022-06-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
     <loc>https://wecy-chen.github.io/categories/js/</loc>
+    <lastmod>2022-06-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wecy-chen.github.io/categories/md%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2022-06-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wecy-chen.github.io/categories/vue/</loc>
+    <lastmod>2022-06-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wecy-chen.github.io/categories/typescript/</loc>
+    <lastmod>2022-06-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wecy-chen.github.io/categories/%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2022-06-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wecy-chen.github.io/categories/%E6%94%AF%E4%BB%98%E5%AE%9D/</loc>
+    <lastmod>2022-06-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wecy-chen.github.io/categories/git/</loc>
+    <lastmod>2022-06-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wecy-chen.github.io/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2022-06-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
