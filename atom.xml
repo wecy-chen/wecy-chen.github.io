@@ -6,7 +6,7 @@
   <link href="https://wecy-chen.github.io/atom.xml" rel="self"/>
   
   <link href="https://wecy-chen.github.io/"/>
-  <updated>2025-07-07T07:46:42.408Z</updated>
+  <updated>2025-07-11T08:23:14.122Z</updated>
   <id>https://wecy-chen.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>黑苹果</title>
+    <link href="https://wecy-chen.github.io/2025/07/09/1/"/>
+    <id>https://wecy-chen.github.io/2025/07/09/1/</id>
+    <published>2025-07-08T23:04:35.000Z</published>
+    <updated>2025-07-11T08:23:14.122Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="openCore"><a href="#openCore" class="headerlink" title="openCore"></a>openCore</h1><p>全部操作在 OC 内 config 文件</p><h2 id="添加-nvram-启动项"><a href="#添加-nvram-启动项" class="headerlink" title="添加 nvram 启动项"></a>添加 nvram 启动项</h2><ol><li><p>找到 Misc — Boot–Show Picker 并勾选；</p></li><li><p>找到 Misc — Boot–HideAuxiliary 确保取消勾选</p></li></ol><h2 id="切换-SIP-状态"><a href="#切换-SIP-状态" class="headerlink" title="切换 SIP 状态"></a>切换 SIP 状态</h2><p>Misc – Security – AllowToggleSip 勾选保存</p><p>恢复模式 OC 引导界面按空格</p><p>ToggleSIP(Enabled) 开启显示<br>ToggleSIP(Disabled) 关闭</p><h1 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h1><h2 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h2><p>macOS系统抓取10分钟内kernel log的详细信息命令：</p><p>log show –predicate ‘process == “kernel”‘ –debug –last 10m &gt; ~/Desktop/kernel.log</p><h2 id="安装权限问题"><a href="#安装权限问题" class="headerlink" title="安装权限问题"></a>安装权限问题</h2><ol><li>启用 任何来源<br>打开启动台–其他–终端，打开终端输入<br>sudo spctl –master-disable</li></ol><p>macOS15 版本<br><a href="https://macoshome.com/course/58293.html">https://macoshome.com/course/58293.html</a><br>打开 “系统设置” – “安全性与隐私” – “安全性” – 允许一下来源的应用程序 – 点击 App Store 与已知开发者选项，然后选择 任何来源</p><ol start="2"><li>已损坏处理</li></ol><p>sudo xattr -rd com.apple.quarantine 空格 APP 路径 (只处理当前应用一次)</p><p>需要关闭 SIP</p><p>csrutil status 查看状态</p><p>intel 处理器 开机按 Command+R 进入 Recovery 恢复模式</p><p>ARM 处理器 按住开机电源键不要松开</p><p>实用工具-终端</p><p>csrutil disable 关闭<br>csrutil enable 开启</p><p>mac 关闭教程</p><p><a href="https://macoshome.com/course/66652.html">https://macoshome.com/course/66652.html</a></p><p>黑苹果地址</p><p><a href="https://macoshome.com/hackintosh">https://macoshome.com/hackintosh</a></p><h1 id="杂记"><a href="#杂记" class="headerlink" title="杂记"></a>杂记</h1><p>测试机型: 零刻 gti13 ultra + EX 显卡坞 + RX580 免驱显卡</p><ol><li><p>配置</p></li><li><p>i9 13900HK 内存 32g+1T</p></li><li><p>intel 网卡 AX200</p></li><li><p>博通无线网卡 BCM94352Z</p></li></ol><p>10 代之后必须要搭配独立显卡使用核显无法驱动</p><p>进入 BOIS 按 del<br>启动选择按 F7</p><p>log show –predicate ‘process == “kernel”‘ –debug –last 10m &gt; ~/Desktop/kernel.log</p>]]></content>
+    
+    
+    <summary type="html">黑苹果一些杂记</summary>
+    
+    
+    
+    <category term="黑苹果" scheme="https://wecy-chen.github.io/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+    
+    <category term="demo" scheme="https://wecy-chen.github.io/tags/demo/"/>
+    
+  </entry>
   
   <entry>
     <title>电脑杂记</title>
@@ -396,27 +417,6 @@
     
     
     <category term="软件" scheme="https://wecy-chen.github.io/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vscode配置</title>
-    <link href="https://wecy-chen.github.io/2022/08/09/vscode/"/>
-    <id>https://wecy-chen.github.io/2022/08/09/vscode/</id>
-    <published>2022-08-08T23:04:35.000Z</published>
-    <updated>2025-05-07T03:13:16.727Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>打开 vscode</p><p>打开菜单栏[文件]—&gt;[首选项]—&gt;[设置]—&gt;打开设置(<code>settings.json</code>)</p><h2 id="基础配置如下"><a href="#基础配置如下" class="headerlink" title="基础配置如下"></a>基础配置如下</h2><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="comment">// 底部状态栏</span></span><br><span class="line">  <span class="attr">&quot;workbench.colorCustomizations&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;statusBar.background&quot;</span>: <span class="string">&quot;#1A1A1A&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;statusBar.noFolderBackground&quot;</span>: <span class="string">&quot;#0A0A0D&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;statusBar.debuggingBackground&quot;</span>: <span class="string">&quot;#511f1f&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">//缩进2格</span></span><br><span class="line">  <span class="attr">&quot;editor.tabSize&quot;</span>: <span class="number">2</span>,</span><br><span class="line">  <span class="comment">//缩进格数不被重写</span></span><br><span class="line">  <span class="attr">&quot;editor.detectIndentation&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="comment">//配置git路径(win)</span></span><br><span class="line">  <span class="attr">&quot;terminal.integrated.defaultProfile.windows&quot;</span>: <span class="string">&quot;Git-Bath&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;terminal.integrated.profiles.windows&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;Git-Bath&quot;</span>: &#123;</span><br><span class="line">      <span class="attr">&quot;path&quot;</span>: <span class="string">&quot;D:\\Git\\bin\\bash.exe&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;args&quot;</span>: []</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">//保存自动格式化</span></span><br><span class="line">  <span class="attr">&quot;editor.formatOnSave&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="comment">//自动保存</span></span><br><span class="line">  <span class="attr">&quot;files.autoSave&quot;</span>: <span class="string">&quot;afterDelay&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="Vscode-主题字体"><a href="#Vscode-主题字体" class="headerlink" title="Vscode 主题字体"></a>Vscode 主题字体</h2><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//主题发光</span></span><br><span class="line"><span class="string">&quot;vscode_custom_css.imports&quot;</span>: [</span><br><span class="line">  <span class="string">&quot;file:///E:/css/synthwave84.css&quot;</span></span><br><span class="line">],</span><br><span class="line"><span class="comment">//字体顺序</span></span><br><span class="line"><span class="string">&quot;editor.fontFamily&quot;</span>: <span class="string">&quot;Consolas,Microsoft Yahei, &#x27;Courier New&#x27;, monospace&quot;</span></span><br></pre></td></tr></table></figure><p><a href="https://wecy-chen.github.io/css/synthwave84.css">css 文件地址</a></p><p>安装 <code>Custom CSS and JS Loader</code> 扩展样式插件</p><p><kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> 打开插件命令设置</p><p>输入命令 <code>Enable Custom CSS and JS</code> 重启生效</p><p>安装<code>Fix VSCode Checksums</code> 插件 输入<code>Fix Checksums: Apply</code> 去掉 code 安装似乎损坏。请重新安装。提示</p><p>效果<br><img src="/image/vscode/setting.png" alt="setting"></p><h2 id="格式化"><a href="#格式化" class="headerlink" title="格式化"></a>格式化</h2><p><strong>Prettier - Code formatter</strong><br>代码格式化</p><h2 id="打字特效"><a href="#打字特效" class="headerlink" title="打字特效"></a>打字特效</h2><p><a href="https://blog.csdn.net/xiaowuguiya/article/details/118436910">教程</a></p><p><strong>Power Mode</strong></p><p>设置中搜索(文件—&gt;首选项—&gt;设置)</p><ol><li><p>启用 <code>powermode.enable</code></p></li><li><p>抖动<code>powermode</code>—&gt;<code>shake</code> 找到<code>Shake intensity</code> 改为 0 去掉抖动</p></li><li><p>更换特效<code>powermode</code>—&gt;<code>General</code> 找到<code>Presets</code> 下拉选择需要的特效</p></li></ol><h2 id="背景色透明"><a href="#背景色透明" class="headerlink" title="背景色透明"></a>背景色透明</h2><p><strong>Windows opacity</strong></p><h2 id="卡顿提速"><a href="#卡顿提速" class="headerlink" title="卡顿提速"></a>卡顿提速</h2><ol><li> 打开命令面板(ctrl+shift+P) (cmnd+shift+p)</li><li> 输入 Preferences: Configure Runtime Arguments</li><li> 添加 “disable-hardware-acceleration”: true</li><li> 重启</li></ol><p>配置 setting.json</p><p><code>&quot;winopacity.opacity&quot;: 240,</code> 100 ~ 255 就能看见</p><h1 id="远程控制"><a href="#远程控制" class="headerlink" title="远程控制"></a>远程控制</h1><p>所需插件</p><p>Remote-SSH</p><p>Remote-SSH: Editing Configuration Files</p><p>Remote Explorer</p><p>无需服务器密码</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Host 中文名称</span><br><span class="line">  HostName 服务地址</span><br><span class="line">  User root</span><br><span class="line"></span><br><span class="line">Host *</span><br><span class="line">HostkeyAlgorithms +ssh-rsa</span><br><span class="line">PubkeyAcceptedKeyTypes +ssh-rsa</span><br><span class="line"></span><br><span class="line">Host github.com</span><br><span class="line">User 邮箱.com</span><br><span class="line">HostName ssh.github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~/.ssh/id_rsa</span><br><span class="line">Port 443</span><br></pre></td></tr></table></figure><ol><li><p>打开用户<code>C:\Users\wecy\.ssh</code>路径,记事本打开<code>id_rsa.pub</code>文件 复制内容(要先生成密钥 ssh-keygen -t rsa -C “用户名”)</p></li><li><p>服务器进入<code>~/.ssh/</code> 用 xshell 文件管理打开<code>authorized_keys</code>文件 复制密钥内容</p></li></ol><p>~/.ssh/ /root/.ssh</p><p>可选配置</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Host dev</span><br><span class="line">  HostName xx.cmtspace.cn</span><br><span class="line">  User root</span><br><span class="line">  Port 22</span><br><span class="line">  PreferredAuthentications publickey</span><br><span class="line">  IdentityFile &quot;C:\Users\wecy\.ssh\id_rsa&quot;</span><br></pre></td></tr></table></figure><h1 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a>卸载</h1><ol><li><p>卸载 vscode 软件</p></li><li><p>删除没卸干净的配置信息和插件</p><ul><li>删除<code>C:\Users\wecy\.vscode</code>本地插件文件夹</li><li>删除<code>C:\Users\wecy\AppData\Roaming\Code</code>本地缓存</li></ul></li><li><p>重新安装</p></li></ol><p><strong>方法二：原理同方法一</strong></p><ol><li>win + r 打开运行 %appdata% 回车</li><li>删除 Code 和 Visual Studio Code 文件夹</li><li>地址栏输入 %userprofile% 回车</li><li>删除 .vscode 文件夹</li></ol><h1 id="同步"><a href="#同步" class="headerlink" title="同步"></a>同步</h1><p><strong>注:设置同步配置失败,要用管理员身份运行 vscode</strong></p>]]></content>
-    
-    
-    <summary type="html">vscode配置</summary>
-    
-    
-    
-    <category term="vscode" scheme="https://wecy-chen.github.io/categories/vscode/"/>
-    
-    
-    <category term="vscode" scheme="https://wecy-chen.github.io/tags/vscode/"/>
     
   </entry>
   
